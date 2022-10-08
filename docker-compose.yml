@@ -3,13 +3,13 @@ version: '3.7'
 services:
     api:
         build:
-            context: ./api_vtb
+            context: ./api
         container_name: api
         ports:
              - "5000:1707"
     bot:
         build:
-            context: ./api_bot_vtb
+            context: ./bot
         container_name: bot
         depends_on:
              - api 
